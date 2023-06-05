@@ -1,0 +1,54 @@
+[user]
+    name = meobilivang 
+    email = phongnguyen01.work@ygmail.com
+	signingkey = 715F4BEDEE9CDF77
+[commit]
+    gpgsign = true
+[core]
+    ignorecase = false
+    editor = nvim
+[status]
+    submoduleSummary = true
+[alias]
+    graph = log --graph
+    adog = log --all --decorate --oneline --graph
+    d = diff
+    p = push
+    a = add
+    aa = add --all
+    b = branch 
+    cm = commit -m
+    s = show
+[push]
+    default = current
+[init]
+    defaultBranch = main
+[rebase]
+    autoStash = true
+[pull]
+    rebase = true
+[diff]
+    colorMoved = zebra
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[color]
+    ui = true
+    status = true
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = red
