@@ -77,20 +77,27 @@ set wildmode=list:longest
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 
 " Highlight cursor line underneath the cursor horizontally.
-" set cursorline
+set cursorline
 
 " Highlight cursor line underneath the cursor vertically.
-set cursorcolumn
+" set cursorcolumn
 
 " Encoding
 set encoding=utf-8
 
 set backspace=indent,eol,start
 
+" auto identation moving to next line
+set autoindent
+
 " YAML config
 au! BufNewFile,BufReadPost *.{yaml,yml} set filetype=yaml foldmethod=intent
 " tab space for yaml
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+
+" identLine package
+" let g:indentLine_setColors = 0
+let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 
 " }}}
 
@@ -104,18 +111,21 @@ endif
 set background=dark
 
 
-colorscheme synthwave84
 " }}}
 
 " PLUGINS ---------------------------------------------------------------- {{{
 call plug#begin('~/.vim/plugged')
-
-
+  
+  "  status bar
+  Plug 'itchyny/lightline.vim'
+  
   Plug 'dense-analysis/ale'
 
   Plug 'preservim/nerdtree'
 
   Plug 'Yggdroot/indentLine'
+    
+  Plug 'tpope/vim-commentary'
 
 call plug#end()
 " }}}
@@ -129,12 +139,16 @@ nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
 
-" Resize split windows using arrow keys by pressing:
-" CTRL+UP, CTRL+DOWN, CTRL+LEFT, or CTRL+RIGHT.
-noremap <c-up> <c-w>+
-noremap <c-down> <c-w>-
-noremap <c-left> <c-w>>
-noremap <c-right> <c-w><
+" NERDTre
+noremap <C-w>n :NERDTreeToggle<cr>
+
+" tab
+nnoremap <C-t>n :tabnew<CR>
+nnoremap <C-t>w :tabclose<CR>
+
+" split window
+noremap <C-w>- :split<cr>
+noremap <C-w>\| :vsplit<cr>
 
 " }}}
 
