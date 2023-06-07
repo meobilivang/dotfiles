@@ -1,6 +1,6 @@
 [user]
     name = meobilivang 
-    email = phongnguyen01.work@ygmail.com
+    email = phongnguyen01.work@gmail.com
 	signingkey = 715F4BEDEE9CDF77
 [commit]
     gpgsign = true
@@ -19,6 +19,7 @@
     b = branch 
     cm = commit -m
     s = show
+    st = status
 [push]
     default = current
 [init]
