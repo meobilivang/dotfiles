@@ -1,28 +1,60 @@
 {
-    "window.zoomLevel": 1,
-    "workbench.colorTheme": "SynthWave '84",
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorCustomizations": {
-        "terminal.background":"#0C0D0E",
-        "terminal.foreground":"#B7B8B9",
-        "terminalCursor.background":"#B7B8B9",
-        "terminalCursor.foreground":"#B7B8B9",
-        "terminal.ansiBlack":"#0C0D0E",
-        "terminal.ansiBlue":"#3182BD",
-        "terminal.ansiBrightBlack":"#737475",
-        "terminal.ansiBrightBlue":"#3182BD",
-        "terminal.ansiBrightCyan":"#80B1D3",
-        "terminal.ansiBrightGreen":"#31A354",
-        "terminal.ansiBrightMagenta":"#756BB1",
-        "terminal.ansiBrightRed":"#E31A1C",
-        "terminal.ansiBrightWhite":"#FCFDFE",
-        "terminal.ansiBrightYellow":"#DCA060",
-        "terminal.ansiCyan":"#80B1D3",
-        "terminal.ansiGreen":"#31A354",
-        "terminal.ansiMagenta":"#756BB1",
-        "terminal.ansiRed":"#E31A1C",
-        "terminal.ansiWhite":"#B7B8B9",
-        "terminal.ansiYellow":"#DCA060"
-      },
-    "terminal.external.osxExec": "iTerm.app"
+  "workbench.colorTheme": "SynthWave '84",
+  "editor.rulers": [
+    79
+  ],
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorCustomizations": {
+    "terminal.background": "#0C0D0E",
+    "terminal.foreground": "#B7B8B9",
+    "terminalCursor.background": "#B7B8B9",
+    "terminalCursor.foreground": "#B7B8B9",
+    "terminal.ansiBlack": "#0C0D0E",
+    "terminal.ansiBlue": "#3182BD",
+    "terminal.ansiBrightBlack": "#737475",
+    "terminal.ansiBrightBlue": "#3182BD",
+    "terminal.ansiBrightCyan": "#80B1D3",
+    "terminal.ansiBrightGreen": "#31A354",
+    "terminal.ansiBrightMagenta": "#756BB1",
+    "terminal.ansiBrightRed": "#E31A1C",
+    "terminal.ansiBrightWhite": "#FCFDFE",
+    "terminal.ansiBrightYellow": "#DCA060",
+    "terminal.ansiCyan": "#80B1D3",
+    "terminal.ansiGreen": "#31A354",
+    "terminal.ansiMagenta": "#756BB1",
+    "terminal.ansiRed": "#E31A1C",
+    "terminal.ansiWhite": "#B7B8B9",
+    "terminal.ansiYellow": "#DCA060"
+  },
+  "terminal.external.osxExec": "iTerm.app",
+  "python.formatting.provider": "black",
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv",
+  "python.autoComplete.extraPaths": [],
+  "editor.formatOnSave": true,
+  // tab -> space
+  "editor.insertSpaces": true,
+  "editor.tabSize": 4,
+  "editor.detectIndentation": true,
+  "python.linting.flake8Enabled": true,
+  "python.analysis.extraPaths": [],
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "[yaml]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced"
+  },
+  "editor.renderWhitespace": "all",
+  "files.trimTrailingWhitespace": true,
+  "files.associations": {
+    "*.yaml": "yaml"
+  },
+  "files.insertFinalNewline": true,
+  "git.confirmSync": false,
+  "editor.inlineSuggest.enabled": true,
+  "codeQL.telemetry.enableTelemetry": false
 }

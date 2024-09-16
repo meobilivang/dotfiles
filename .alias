@@ -5,3 +5,6 @@ alias vi=nvim
 alias vim=nvim
 
 
+# terraform
+alias tf=terraform
+
